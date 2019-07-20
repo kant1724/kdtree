@@ -14,7 +14,7 @@ pip install scipy==1.1.0
 pip install numpy==1.16.4  
 ```
 
-#### 1. 근접 거리 기반
+### 1. 근접 거리 기반
 #### 개요
 KDTree와 google API를 이용하여 내 위치에서 가까운 거리순으로 주변 위치정보를 가져온다.  
 
@@ -23,7 +23,7 @@ KDTree와 google API를 이용하여 내 위치에서 가까운 거리순으로 
   python go_distance.py
 ```
 
-#### 2. 단어 유사도 기반
+### 2. 단어 유사도 기반
 #### 개요
 KDTree를 이용하여 제품(Product)과 창고의 카테고리(Category)의 유사도가 가까운것 순으로 가져온다.
 
