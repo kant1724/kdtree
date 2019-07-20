@@ -40,7 +40,9 @@ dist_idx = [KDTree(others_vector).query(my_vector, k=5)]
 print(dist_idx)
 
 for from_idx, (distance, index) in enumerate(dist_idx):
+    distance = distance[0]
+    index = index[0]
     for i in range(len(distance)):
-        d = distance[0][i]
-        nm = others[index[0][i]]
+        d = distance[i]
+        nm = others[index[i]]
         print('`' + my[from_idx] + '`으로부터 ' + str(i + 1) + '번째로 유사한 카테고리: ' + nm)
