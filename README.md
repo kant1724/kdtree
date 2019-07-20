@@ -19,9 +19,9 @@ pip install numpy==1.16.4
 KDTree와 google API를 이용하여 내 위치에서 가까운 거리순으로 주변 위치정보를 가져온다.  
 
 #### 실행방법
-'''
+```
   python go_distance.py
-'''
+```
 
 ### 2. go_word_vector
 #### 개요
@@ -31,9 +31,9 @@ KDTree를 이용하여 제품(Product)과 창고의 카테고리(Category)의 �
 https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ko.300.vec.gz
 
 #### 실행방법
-'''
+```
   python go_word_vec.py
-'''
+```
 
 #### 기타 참고 사이트
 
