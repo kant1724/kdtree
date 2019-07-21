@@ -23,7 +23,7 @@ KDTree와 google API를 이용하여 내 위치에서 가까운 거리순으로 
   python go_distance.py
 ```
 
-### 2. 단어 유사도 기반
+### 2. 키워드 유사도 기반
 #### 개요
 KDTree를 이용하여 상호간에 키워드 유사도가 가까운 순으로 가져온다.
 
@@ -33,12 +33,12 @@ KDTree를 이용하여 상호간에 키워드 유사도가 가까운 순으로 �
 ```
 
 #### Prerequisite
-- 필요한 단어 vector만 추출하기 위해 아래와 같이 작업을 실시합니다.
+- 필요한 키워드 vector만 추출하기 위해 아래와 같이 작업을 실시합니다.
 
 1. 아래 링크에 있는 파일을 다운로드 후 압축 해제하여 패키지에 포함 (cc.ko.300.vec 파일을 kdtree 프로젝트에 포함)
 https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ko.300.vec.gz
 
-2. word_list.txt 에 비교대상 전체 단어를 입력
+2. word_list.txt 에 비교대상 전체 키워드를 입력
 
 3. extract_vectors.py 실행 후 my.ko.300.vec 생성
 
