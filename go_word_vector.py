@@ -18,18 +18,19 @@ def load_embeddings(path):
 '''
     Load Word Embeddings
 '''
-embedding_data = load_embeddings('./ko.txt')
+embedding_data = load_embeddings('./cc.ko.300.vec')
+#embedding_data = load_embeddings('./ko.txt')
 
 '''
     제품명
 '''
-my = ['딸기']
+my = ['연필']
 my_vector = [embedding_data[my[0]]]
 
 '''
     창고 카테고리
 '''
-others = ['자동차', '하드웨어', '과일', '전자', '사무']
+others = ['자동차', '하드웨어', '과일', '사무용품', '가전기기']
 others_vector = []
 for other in others:
     others_vector.append(embedding_data[other])
