@@ -18,18 +18,18 @@ def load_embeddings(path):
 '''
     FastText Word Embeddings
 '''
-embedding_data = load_embeddings('./cc.ko.300.vec')
+embedding_data = load_embeddings('./ko.txt')
 
 '''
     제품명
 '''
-my = ['사과']
+my = ['딸기']
 my_vector = [embedding_data[my[0]]]
 
 '''
     창고 카테고리
 '''
-others = ['자동차', '하드웨어', '과일', '전자제품', '사무용품']
+others = ['자동차', '하드웨어', '과일', '전자', '사무']
 others_vector = []
 for other in others:
     others_vector.append(embedding_data[other])
