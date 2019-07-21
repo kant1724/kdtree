@@ -18,8 +18,7 @@ def load_embeddings(path):
 '''
     Load Word Embeddings
 '''
-embedding_data = load_embeddings('./cc.ko.300.vec')
-#embedding_data = load_embeddings('./ko.txt')
+embedding_data = load_embeddings('./my.ko.300.vec')
 
 '''
     제품명
