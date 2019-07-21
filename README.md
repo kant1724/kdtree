@@ -27,6 +27,11 @@ KDTree와 google API를 이용하여 내 위치에서 가까운 거리순으로 
 #### 개요
 KDTree를 이용하여 제품(Product)과 창고의 카테고리(Category)의 유사도가 가까운것 순으로 가져온다.
 
+#### 실행방법
+```
+  python go_word_vec.py
+```
+
 #### Prerequisite
 - 필요한 단어 vector만 추출하기 위해 아래와 같이 작업을 실시합니다.
 
@@ -39,11 +44,6 @@ https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ko.300.vec.gz
 
 ```
   python extract_vectors.py
-```
-
-#### 실행방법
-```
-  python go_word_vec.py
 ```
 
 #### 기타 참고 사이트
