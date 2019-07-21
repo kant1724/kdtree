@@ -16,7 +16,7 @@ def load_embeddings(path):
         return dict
 
 '''
-    FastText Word Embeddings
+    Load Word Embeddings
 '''
 embedding_data = load_embeddings('./ko.txt')
 
@@ -34,7 +34,7 @@ others_vector = []
 for other in others:
     others_vector.append(embedding_data[other])
 
-# KDTree알고리즘으로 제목과 유사한 카테고리를 유사도 순으로 가져옴 (k는 가져올 갯수)
+# KDTree알고리즘으로 제품과 유사한 카테고리를 유사도 순으로 가져옴 (k는 가져올 갯수)
 dist_idx = [KDTree(others_vector).query(my_vector, k=5)]
 
 print(dist_idx)
