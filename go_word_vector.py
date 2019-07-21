@@ -21,20 +21,20 @@ def load_embeddings(path):
 embedding_data = load_embeddings('./my.ko.300.vec')
 
 '''
-    제품명
+    제품 키워드
 '''
 my = ['연필']
 my_vector = [embedding_data[my[0]]]
 
 '''
-    창고 카테고리
+    창고 키워드
 '''
 others = ['자동차', '하드웨어', '과일', '사무용품', '가전기기']
 others_vector = []
 for other in others:
     others_vector.append(embedding_data[other])
 
-# KDTree알고리즘으로 제품과 유사한 카테고리를 유사도 순으로 가져옴 (k는 가져올 갯수)
+# KDTree알고리즘으로 매칭되는 키워드를 유사도 순으로 가져옴 (k는 가져올 갯수)
 dist_idx = [KDTree(others_vector).query(my_vector, k=5)]
 
 print(dist_idx)
@@ -45,4 +45,4 @@ for from_idx, (distance, index) in enumerate(dist_idx):
     for i in range(len(distance)):
         d = distance[i]
         nm = others[index[i]]
-        print('`' + my[from_idx] + '`으로부터 ' + str(i + 1) + '번째로 유사한 카테고리: ' + nm)
+        print('`' + my[from_idx] + '`으로부터 ' + str(i + 1) + '번째로 유사한 키워드: ' + nm)
